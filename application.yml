@@ -1,4 +1,4 @@
-jdbc:postgresql://localhost:5432/clientside?createDatabaseIfNotExist=trueeureka:
+eureka:
   client:
     region: default
     registry-fetch-interval-seconds: 5
@@ -8,7 +8,7 @@ jdbc:postgresql://localhost:5432/clientside?createDatabaseIfNotExist=trueeureka:
 spring:
   datasource:
     driver-class-name: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME:org.postgresql.Driver}
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/clientside?createDatabaseIfNotExist=true}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/clientside?createDatabaseIfNotExist=true}
     username: ${SPRING_DATASOURCE_USERNAME:root}
     password: ${SPRING_DATASOURCE_PASSWORD:root}
   jpa:
